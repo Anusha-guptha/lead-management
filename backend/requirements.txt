@@ -5,7 +5,9 @@ dj-database-url==3.1.2
 Django==5.2.15
 django-cors-headers==4.9.0
 djangorestframework==3.17.1
+gunicorn==26.0.0
 idna==3.18
+packaging==26.2
 psycopg==3.3.4
 psycopg-binary==3.3.4
 python-decouple==3.8
