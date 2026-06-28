@@ -1,0 +1,9 @@
+﻿.modal-backdrop { position: fixed; inset: 0; z-index: 20; display: grid; place-items: center; padding: 18px; background: rgba(23, 25, 31, 0.38); backdrop-filter: blur(10px); }
+.modal-card { width: min(460px, 100%); background: rgba(255, 255, 255, 0.92); border: 1px solid var(--line); border-radius: 24px; box-shadow: 0 28px 90px rgba(23, 25, 31, 0.25); overflow: hidden; }
+.modal-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; padding: 19px 20px 15px; border-bottom: 1px solid var(--line); }
+.modal-head h2 { margin-top: 4px; font-size: 18px; color: var(--ink); letter-spacing: -0.02em; }
+.icon-button { width: 34px; height: 34px; border: 1px solid var(--line); border-radius: 50%; background: rgba(255, 255, 255, 0.78); color: var(--muted); font-size: 22px; line-height: 1; }
+.icon-button:hover { background: #fff; color: var(--ink); }
+.modal-form { padding: 17px 20px 20px; }
+.modal-actions { display: flex; justify-content: flex-end; gap: 8px; padding-top: 4px; }
+

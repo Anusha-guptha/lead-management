@@ -1,0 +1,45 @@
+﻿.note-item time::before {
+  content: "•";
+  color: var(--quiet);
+  margin-right: 10px;
+}
+
+.page-head {
+  padding: 14px 2px 4px;
+}
+.page-head .kicker {
+  color: #7a8178;
+}
+.page-copy {
+  max-width: 560px;
+}
+.signin-copy h1 {
+  max-width: 390px;
+}
+.signin-copy p:last-child {
+  font-size: 14px;
+}
+.panel-heading h2,
+.login-card-head h2,
+.form-title h2 {
+  font-weight: 850;
+}
+@media (max-width: 720px) {
+  .signin-copy h1 {
+    font-size: 28px;
+  }
+}
+
+.simple-auth {
+  background: transparent;
+}
+.auth-only-card {
+  width: min(420px, 100%);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  box-shadow: var(--soft-shadow);
+}
+.auth-only-card .form-title h2 {
+  font-size: 24px;
+}
+

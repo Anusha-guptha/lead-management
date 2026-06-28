@@ -1,0 +1,126 @@
+﻿.note-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px 17px 32px;
+  overflow: visible;
+}
+.note-item.note-card {
+  position: relative;
+  overflow: visible;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 8px 22px rgba(39, 34, 26, 0.05);
+}
+.note-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+.note-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+.note-meta strong {
+  color: var(--ink);
+  font-size: 13px;
+}
+.note-meta span {
+  color: #4f5854;
+  font-size: 13px;
+  font-weight: 700;
+}
+.note-meta span::before {
+  content: "•";
+  color: var(--quiet);
+  margin-right: 8px;
+}
+.note-menu-wrap {
+  position: relative;
+  flex: 0 0 auto;
+  z-index: 20;
+}
+.note-menu-trigger {
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(9, 111, 95, 0.1);
+  color: var(--green);
+  font-size: 22px;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+}
+.note-menu-trigger:hover {
+  background: rgba(9, 111, 95, 0.16);
+}
+.note-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  z-index: 50;
+  min-width: 148px;
+  padding: 6px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 18px 44px rgba(23, 25, 31, 0.16);
+}
+.note-menu button {
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--ink);
+  text-align: left;
+  padding: 8px 9px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.note-menu button:hover {
+  background: rgba(9, 111, 95, 0.08);
+}
+.note-menu button.danger {
+  color: #b42318;
+}
+.note-menu button.danger:hover {
+  background: rgba(180, 35, 24, 0.08);
+}
+.note-edit-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.note-edit-box textarea {
+  resize: vertical;
+  min-height: 92px;
+}
+.note-edit-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.note-item.note-card p {
+  color: #4b5563;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.note-card-head {
+  position: relative;
+  z-index: 2;
+}
+.notes-panel .panel-heading,
+.notes-panel .note-form {
+  position: relative;
+  z-index: 1;
+}
+

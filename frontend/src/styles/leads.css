@@ -1,0 +1,29 @@
+﻿.toolbar-panel { background: var(--surface); border: 1px solid var(--line); border-radius: 22px; padding: 13px; margin-bottom: 14px; display: grid; gap: 12px; box-shadow: var(--soft-shadow); backdrop-filter: blur(16px); }
+.search-form { display: grid; grid-template-columns: 1fr auto auto; gap: 8px; }
+.status-tabs { display: flex; flex-wrap: wrap; gap: 7px; }
+.status-tabs button { border: 1px solid var(--line); background: rgba(255, 255, 255, 0.62); color: var(--muted); border-radius: 999px; padding: 7px 12px; font-size: 13px; font-weight: 850; }
+.status-tabs button.active { background: #17191f; border-color: #17191f; color: #fff; }
+.lead-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; align-items: start; }
+.lead-table { overflow-x: auto; }
+.lead-table-head, .lead-table-row { display: grid; grid-template-columns: 1.05fr 0.85fr 1.2fr 135px 55px; gap: 11px; align-items: center; min-width: 790px; padding: 12px 17px; }
+.lead-table-head { background: rgba(255, 255, 255, 0.42); color: var(--quiet); font-size: 11px; font-weight: 950; letter-spacing: 0.1em; text-transform: uppercase; border-bottom: 1px solid var(--line); }
+.lead-table-row { border: 0; border-bottom: 1px solid rgba(23, 25, 31, 0.08); background: transparent; color: inherit; text-align: left; width: 100%; }
+.lead-table-row:hover { background: rgba(255, 255, 255, 0.58); }
+.lead-table-row:focus-visible { outline: 2px solid rgba(9, 111, 95, 0.38); outline-offset: -2px; }
+.lead-table-row:last-child { border-bottom: 0; }
+.lead-table-row div { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.lead-table-row strong { font-size: 13px; color: var(--ink); }
+.lead-table-row span { font-size: 13px; }
+.lead-table-row small { color: var(--quiet); font-size: 12px; }
+.count-pill { background: rgba(9, 111, 95, 0.11); color: var(--green); border-radius: 999px; padding: 6px 10px; font-size: 12px; font-weight: 950; }
+.empty-state { padding: 26px 17px; color: var(--quiet); font-size: 13px; }
+.stacked-form { padding: 15px 17px 17px; display: flex; flex-direction: column; gap: 13px; }
+
+.status-badge { display: inline-flex; justify-content: center; border-radius: 999px; padding: 5px 10px; font-size: 11px; font-weight: 950; white-space: nowrap; }
+.status-badge.new, .status-dot.new { background: rgba(82, 103, 184, 0.13); color: #405293; }
+.status-badge.contacted, .status-dot.contacted { background: rgba(9, 111, 95, 0.12); color: var(--green); }
+.status-badge.qualified, .status-dot.qualified { background: rgba(71, 140, 55, 0.14); color: #39712e; }
+.status-badge.proposal, .status-dot.proposal { background: rgba(199, 144, 47, 0.18); color: #916319; }
+.status-badge.won, .status-dot.won { background: rgba(11, 138, 114, 0.16); color: #08705d; }
+.status-badge.lost, .status-dot.lost { background: rgba(204, 102, 86, 0.16); color: #a9483b; }
+
